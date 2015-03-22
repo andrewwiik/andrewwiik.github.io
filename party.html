@@ -1,12 +1,21 @@
 <!doctype html>
 <html>
 <head>
+<link rel="stylesheet" href="css/animate.css">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
       <style>
+      .section {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+      html {
+        height:100%;
+      }
+        
 footer.page-footer {
   background-color:#1e88e5 !important;
 }
@@ -64,42 +73,59 @@ footer.page-footer {
 }
    </style>
     </head>
-    <body>
+    <body style="height:100%;">
     <header>
    </header>
-   <main>
-    <div class="parallax-container">
+   <main style="height:100%;">
+   <div id="1" class="section scrollspy" style="width:100%; height:100%;">
+    <div style="height: 100%;" class="parallax-container">
       <div class="parallax"><img src="image/partyplx1.jpg"></div>
-      <div style="width:100%; height:100%;" class="valign-wrapper">
+      <div style="width:100%; height:80%;" class="valign-wrapper">
       <h2 style="width:100%; color:white;" class="center-align">You are Invited to Andy's 16th Birthday Party</h2>
       </div>
+      <div class="container center-align">
+      <a style="color:white; border-radius: 100px;" class="blue waves-effect waves-light btn-large center-align" href="#2">Important Party Information</a>
+      </div>
+      </div>
     </div>
-    <div class="section white">
-    <div class="row container">
-      <h3 class="header center-align">What time and Where?</h3>
-      <h5 class="grey-text text-darken-3 lighten-3">The party will be from noon to 9pm, and will take place at the Barry Lakes Club House Beach</h5>
     </div>
-  </div>       
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-
+    <div id="2" class="section scrollspy" style="width:100%; height:100%;">
+  <div style="height:100%;" class="parallax-container">
+      <div class="parallax"><img src="image/partyplx2.jpg"></div>
+      <div style="width:100%; height:100%;" class="valign-wrapper">
+      <div class="container">
+      <p class="wow bounceInUp" style="width:100%; color:white; font-size:1.5em; font-weight:300;" class="left-align"><b>When:</b> August 11th, 2PM to 9PM <br><b>Where:</b> The Barry Lakes Club House Beach in Vernon, NJ<br><b>What to Bring:</b>bring a bottle of sun-tan lotion and a beach towel.<br><b>What to Wear:</b> Please wear a bathing suit</p></div>
+      </div>      
+</div>
+</main>
    </main>
    <footer>
    <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/materialize.js"></script>
       <script>
       $(document).ready(function(){
       $('.parallax').parallax();
+      $('.scrollspy').scrollSpy();
     });
       </script>
+      <script src="js/wow.min.js"></script>
+<script>
+var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       300,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    }
+  }
+);
+wow.init();
+</script>
       </footer>
     </body>
   </html>

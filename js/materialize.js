@@ -2117,15 +2117,15 @@ $(document).ready(function(){
 
 //            offset-60 to handle floating fixed tab bar
 				if ($('.tabs-wrapper').length) {
-			    $('html, body').animate({ scrollTop: offset-60 }, {duration: 400, easing: 'easeOutCubic'});
+			    $('html, body').animate({ scrollTop: offset-60 }, {duration: 1500, easing: 'easeOutCubic'});
 				}
 				else {
-		    	$('html, body').animate({ scrollTop: offset }, {duration: 400, easing: 'easeOutCubic'});
+		    	$('html, body').animate({ scrollTop: offset }, {duration: 1500, easing: 'easeOutCubic'});
 				}
 		  });
 		});
 		options = options || {
-			throttle: 100
+			throttle: 10000
 		};
 
 		offset.top = options.offsetTop || 0;
@@ -2133,7 +2133,7 @@ $(document).ready(function(){
 		offset.bottom = options.offsetBottom || 0;
 		offset.left = options.offsetLeft || 0;
 
-		var throttledScroll = throttle(onScroll, options.throttle || 100);
+		var throttledScroll = throttle(onScroll, options.throttle || 1500);
 		var readyScroll = function(){
 			$(document).ready(throttledScroll);
 		};
@@ -2199,9 +2199,9 @@ $(document).ready(function(){
 	$.winSizeSpy = function(options) {
 		$.winSizeSpy = function() { return jWindow; }; // lock from multiple calls
 		options = options || {
-			throttle: 100
+			throttle: 10000
 		};
-		return jWindow.on('resize', throttle(onWinSize, options.throttle || 100));
+		return jWindow.on('resize', throttle(onWinSize, options.throttle || 1500));
 	};
 
 	/**
