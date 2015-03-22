@@ -1,6 +1,12 @@
 <!doctype html>
 <html>
 <head>
+<style>
+#info {
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+}
+</style>
 <link rel="stylesheet" href="css/animate.css">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
@@ -81,10 +87,10 @@ footer.page-footer {
     <div style="height: 100%;" class="parallax-container">
       <div class="parallax"><img src="image/partyplx1.jpg"></div>
       <div style="width:100%; height:80%;" class="valign-wrapper">
-      <h2 style="width:100%; color:white;" class="center-align">You are Invited to Andy's 16th Birthday Party</h2>
+      <h2 id="info" style="width:100%; color:white;" class="center-align"><span  style="display:inline-block;" class="wow bounceInLeft">You are </span> <span style="display:inline-block;" class="wow bounceInUp"> Invited to </span> <span style="display:inline-block;" class="wow bounceInDown"> Andy's 16th </span> <span style="display:inline-block;" class="wow bounceInRight"> Birthday Party</span></h2>
       </div>
       <div class="container center-align">
-      <a style="color:white; border-radius: 100px;" class="blue waves-effect waves-light btn-large center-align" href="#2">Important Party Information</a>
+      <a style="color:white; border-radius: 100px;" class="wow bounceInUp blue waves-effect waves-light btn-large center-align" href="#2">Important Party Information</a>
       </div>
       </div>
     </div>
@@ -92,17 +98,356 @@ footer.page-footer {
     <div id="2" class="section scrollspy" style="width:100%; height:100%;">
   <div style="height:100%;" class="parallax-container">
       <div class="parallax"><img src="image/partyplx2.jpg"></div>
-      <div style="width:100%; height:100%;" class="valign-wrapper">
-      <div class="container">
-      <p class="wow bounceInUp" style="width:100%; color:white; font-size:1.5em; font-weight:300;" class="left-align"><b>When:</b> August 11th, 2PM to 9PM <br><b>Where:</b> The Barry Lakes Club House Beach in Vernon, NJ<br><b>What to Bring:</b>bring a bottle of sun-tan lotion and a beach towel.<br><b>What to Wear:</b> Please wear a bathing suit</p></div>
+      <div style="width:90%; height:90%;" class="left-align">
+      <div class="container" style="width:90%; padding-top: 5%;">
+      <p id="info" class="wow bounceInLeft" style="width:100%; color:white; font-size:1.5em; font-weight:300;" class="left-align"><b>When:</b> August 11th, 2PM to 9PM <br><b>Where:</b> The Barry Lakes Club House Beach in Vernon, NJ<br><b>What to Bring:</b> Bring a bottle of sun-tan lotion and a beach towel.<br><b>What to Wear:</b> Please wear a bathing suit</p>
+      <a id="info" style="color:white; border-radius: 100px;" class="wow bounceInLeft blue waves-effect waves-light btn-large center-align" href="#3">Party Menu</a></div>
       </div>      
 </div>
+<div id="3" class="section scrollspy">
+      <h4 class="center-align">Appetizers</h4>
+      <br>
+      <div class="row">
+      <div class="col l4">
+       <div class="card small" style="height:400px">
+        <div style="height:300px;" class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="image/chickenwings.jpg">
+        </div>
+        <div class="card-content" style="height:100px;">
+          <span class="card-title activator grey-text text-darken-4">Chicken Wings<i class="mdi-navigation-more-vert right"></i></span>
+          <p><a href="http://www.marthastewart.com/326508/emerils-oven-roasted-chicken-wings#Our%20Best%20Summer%20Appetizers|/274311/our-best-summer-appetizers/@center/276964/60-days-summer|326508">Source</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">How to Make Chicken Wings<i class="mdi-navigation-close right"></i></span>
+          <p><b>Ingredients</b><br><ul>
+          <li>4 pounds chicken wings, cut in half at joint (wing tips removed)</li>
+          <li>1/4 cup fresh lemon juice (from 2 lemons)</li>
+          <li>1 tablespoon ground pepper</li>
+          <li>1 tablespoon garlic powder</li>
+          <li>1 tablespoon onion powder</li>
+          <li>2 teaspoons coarse salt</li>
+          <li>2 teaspoons dried thyme</li>
+          <li>1/2 teaspoon cayenne pepper</li>
+          <li>1/4 cup (1/2 stick) unsalted butter, melted</li>
+          <li>Blue cheese or ranch dressing, or barbecue sauce, for dipping</li>
+          </ul>
+          <b>Directions</b>
+          <p> Preheat oven to 500 degrees. Line a large rimmed baking sheet with foil. In a large bowl, toss chicken wings with lemon juice. Add pepper, garlic and onion powders, and salt. Add thyme, crushing it between your fingers as you go. Add cayenne and melted butter. Stir mixture thoroughly, then arrange wings in one layer on baking sheet.</p>
+          <p>Cook 20 minutes, then rotate sheet and flip wings. Cook until wings are browned and cooked through, 10 minutes. Serve with desired dipping sauce.</p>
+
+          </p>
+        </div>
+        </div>
+        </div>
+        <div class="col l4">
+        <div class="card small" style="height:400px">
+        <div style="height:300px;" class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="image/salsa.jpg">
+        </div>
+        <div class="card-content" style="height:100px;">
+          <span class="card-title activator grey-text text-darken-4">Salsa<i class="mdi-navigation-more-vert right"></i></span>
+          <p><a href="http://www.foodnetwork.com/recipes/alton-brown/salsa-recipe.html">Source</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">How to Make Salsa<i class="mdi-navigation-close right"></i></span>
+          <p><b>Ingredients</b><br><ul>
+          <li>6 Roma tomatoes, chopped</li>
+          <li>4 garlic cloves, minced</li>
+          <li>2 seeded and minced jalapenos, plus 2 roasted, skinned and chopped jalapenos</li>
+          <li>1 red bell pepper, fine dice</li>
+          <li>1/2 red onion, fine chopped</li>
+          <li>2 dry ancho chiles, seeded, cut into short strips and snipped into pieces</li>
+          <li>1 tablespoon olive oil</li>
+          <li>1 lime, juiced</li>
+          <li>Chili powder, salt, and pepper, to taste</li>
+          <li>Fresh scallions, cilantro or parsley, to taste</li>
+          </ul>
+
+          <b>Directions</b>
+          <p>In a bowl, combine all ingredients. Place in refrigerator for up to 12 hours for flavor infusion.</p>
+          <p>Serve with tortilla chips</p>
+          </p>
+        </div>
+        </div>
+        </div>
+        <div class="col l4">
+        <div class="card small" style="height:400px">
+        <div style="height:300px;" class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="image/shrimp.jpg">
+        </div>
+        <div class="card-content" style="height:100px;">
+          <span class="card-title activator grey-text text-darken-4">Grilled Shrimp<i class="mdi-navigation-more-vert right"></i></span>
+          <p><a href="http://www.foodnetwork.com/recipes/rachael-ray/grilled-shrimp-recipe.html">Source</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">How to Make Grilled Shrimp<i class="mdi-navigation-close right"></i></span>
+          <p><b>Ingredients</b><br><ul>
+          <li>16 jumbo shrimp, deveined in shell, raw</li>
+          <li>Extra-virgin olive oil, about 1/2 cup for brushing</li>
+          <li>Coarse salt and black pepper</li>
+          <li>2 lemons, halved</li>
+          </ul>
+          <b>Directions</b>
+          <p>Preheat griddle or grill pan over high heat.</p>
+          <p>Butterfly shrimp by slicing almost through lengthwise, but leave shell on shrimp, this will keep the shrimp tender while grilling over such high heat.</p>
+          <p>Brush shrimps with oil, season with salt and pepper and grill 2 minutes on each side, until shells are hot pink and shrimp is opaque.</p>
+          <p>Place lemons on grill the last minute. The heat will release the juice from the lemons. To serve, squ
+        </div>
+        </div>
+        </div>
+      </div>
+      <h4 class="center-align">Dinner</h4>
+      <br>
+      <div class="row">
+      <div class="col l4">
+        <div class="card small" style="height:400px">
+        <div style="height:300px;" class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="image/cheeseburger.jpg">
+        </div>
+        <div class="card-content" style="height:100px;">
+          <span class="card-title activator grey-text text-darken-4">Cheese Burgers<i class="mdi-navigation-more-vert right"></i></span>
+          <p><a href="http://www.foodnetwork.com/recipes/food-network-kitchens/perfect-beef-burgers-recipe.html">Source</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">How to Make Cheese Burgers<i class="mdi-navigation-close right"></i></span>
+          <p><b>Ingredients</b><br><ul>
+          <li>4 medium roasted jalapenos, halved lengthwise, seeded, and thinly sliced crosswise</li>
+          <li>1 cup shredded jack cheese</li>
+          <li>1 cup shredded Cheddar</li>
+          <li>1 cup shredded provolone cheese</li>
+          <li>2 tablespoons chopped cilantro leavesk</li>
+          <li>6 (6-inch) flour tortillas</li>
+          <li>Tomatillo Salsa, for serving</li>
+          </ul>
+          <b>Directions</b>
+          <p>Combine chiles, cheese, and cilantro in a medium bowl and toss to evenly mix.</p>
+          <p>Heat a seasoned cast iron skillet or a large frying pan over medium heat. Add 1 quesadilla and cook until soft, about 15 to 30 seconds.</p>
+          <p>Add 1/2 cup cheese mixture on one half, fold in half, and cook until cheese is melted and tortilla is golden brown, about 1 to 2 minutes. Repeat for remaining quesadillas. Cut each quesadilla into 4 wedges and serve with tomatillo salsa.</p>
+        </div>
+        </div>
+        </div>
+        <div class="col l4">
+        <div class="card small" style="height:400px">
+        <div style="height:300px;" class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="image/cheeseques.jpg">
+        </div>
+        <div class="card-content" style="height:100px;">
+          <span class="card-title activator grey-text text-darken-4">Cheese Quesadillas<i class="mdi-navigation-more-vert right"></i></span>
+          <p><a href="http://www.foodnetwork.com/recipes/aida-mollenkamp/three-cheese-quesadillas-recipe.html">Source</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">How to Make Cheese Quesadillas<i class="mdi-navigation-close right"></i></span>
+          <p><b>Ingredients</b><br><ul>
+          <li>16 jumbo shrimp, deveined in shell, raw</li>
+          <li>Extra-virgin olive oil, about 1/2 cup for brushing</li>
+          <li>Coarse salt and black pepper</li>
+          <li>2 lemons, halved</li>
+          </ul>
+          <b>Directions</b>
+          <p>Preheat griddle or grill pan over high heat.</p>
+          <p>Butterfly shrimp by slicing almost through lengthwise, but leave shell on shrimp, this will keep the shrimp tender while grilling over such high heat.</p>
+          <p>Brush shrimps with oil, season with salt and pepper and grill 2 minutes on each side, until shells are hot pink and shrimp is opaque.</p>
+          <p>Place lemons on grill the last minute. The heat will release the juice from the lemons. To serve, squeeze grilled lemon wedges over shrimp.</p>
+        </div>
+        </div>
+        </div>
+        <div class="col l4">
+        <div class="card small" style="height:400px">
+        <div style="height:300px;" class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="image/hotdog.jpg">
+        </div>
+        <div class="card-content" style="height:100px;">
+          <span class="card-title activator grey-text text-darken-4">Hot Dogs<i class="mdi-navigation-more-vert right"></i></span>
+          <p><a href="http://www.foodnetwork.com/recipes/michael-chiarello/best-hot-dogs-recipe.html">Source</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">How to Make Hot Dogs<i class="mdi-navigation-close right"></i></span>
+          <p><b>Ingredients</b><br><ul>
+          <li>4 good quality beef hot dogs</li>
+          <li>Olive oil</li>
+          <li>Sea salt</li>
+          </ul>
+          <b>Directions</b>
+          <p>Add hot dogs to cold salted water and bring them up to a boil. Turn them off and keep them warm in the hot water. Serve warm.</p>
+          <p>For an added kick of flavor try splitting the boiled dogs almost all the way in half. Open them up and add to a hot pan which a little olive oil has been added. Cook over medium heat until brown on both sides.</p>
+        </div>
+        </div>
+        </div>
+      </div>
+      <h4 class="center-align">Dessert</h4>
+      <br>
+      <div class="row">
+      <div class="col l4">
+      <div class="card small" style="height:0px;">
+        <div style="height:300px;" class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="image/cheeseques.jpg">
+        </div>
+        <div class="card-content" style="height:100px;">
+          <span class="card-title activator grey-text text-darken-4">Cheese Quesadillas<i class="mdi-navigation-more-vert right"></i></span>
+          <p><a href="http://www.foodnetwork.com/recipes/aida-mollenkamp/three-cheese-quesadillas-recipe.html">Source</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">How to Make Cheese Quesadillas<i class="mdi-navigation-close right"></i></span>
+          <p><b>Ingredients</b><br><ul>
+          <li>16 jumbo shrimp, deveined in shell, raw</li>
+          <li>Extra-virgin olive oil, about 1/2 cup for brushing</li>
+          <li>Coarse salt and black pepper</li>
+          <li>2 lemons, halved</li>
+          </ul>
+          <b>Directions</b>
+          <p>Preheat griddle or grill pan over high heat.</p>
+          <p>Butterfly shrimp by slicing almost through lengthwise, but leave shell on shrimp, this will keep the shrimp tender while grilling over such high heat.</p>
+          <p>Brush shrimps with oil, season with salt and pepper and grill 2 minutes on each side, until shells are hot pink and shrimp is opaque.</p>
+          <p>Place lemons on grill the last minute. The heat will release the juice from the lemons. To serve, squeeze grilled lemon wedges over shrimp.</p>
+        </div>
+        </div>
+      </div>
+      <div class="col l4">
+      <div class="card small" style="height:400px">
+        <div style="height:300px;" class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="image/cupcakes.jpg">
+        </div>
+        <div class="card-content" style="height:100px;">
+          <span class="card-title activator grey-text text-darken-4">Cupcakes<i class="mdi-navigation-more-vert right"></i></span>
+          <p><a href="http://www.shoprite.com/pd/Fresh-Bake-Shop/Chocolate-Cupcakes/12-oz/298232000008/">Source</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Cupcakes<i class="mdi-navigation-close right"></i></span>
+          <b>Link</b>
+          <p><a href ="http://www.shoprite.com/pd/Fresh-Bake-Shop/Chocolate-Cupcakes/12-oz/298232000008/">ShopRite Link</a>
+        </div>
+        </div>
+      </div>
+      </div>      
+</div>
+<h4 class="center-align">Beverages</h4>
+<table>
+        <thead>
+          <tr>
+              <th data-field="id">Drink</th>
+              <th data-field="name">Amount</th>
+              <th class="right-align" data-field="price">Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Lemonade Cans</td>
+            <td>36 Cans</td>
+            <td class="right-align"><a href="http://www.walmart.com/ip/Minute-Maid-Light-Lemonade-12-count/10295034">$10.00</a></td>
+          </tr>
+          <tr>
+            <td>Diet Coca Cola Cans</td>
+            <td>36 Cans</td>
+            <td class="right-align"><a href="http://www.walmart.com/ip/Diet-Coke-Cola-12-fl-oz-12-pack/10291610">$12.00</a></td>
+          </tr>
+          <tr>
+            <td>Bottled Water</td>
+            <td>24 Bottles</td>
+            <td class="right-align"><a href="linhk">$5.00</a></td>
+          </tr>
+        </tbody>
+      </table>
+<br>
+<div class="section">
+<h4 class="center-align">Party Playlist</h4>
+<div class="container center-align" style="width:100%;">
+<table>
+        <thead>
+          <tr>
+              <th data-field="id">Song</th>
+              <th class="right-align" data-field="price">Artist</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>All of Me</td>
+            <td class="right-align">John Legend</td>
+          </tr>
+          <tr>
+            <td>Shake it Off</td>
+            <td class="right-align">Taylor Swift</td>
+          </tr>
+          <tr>
+            <td>Party in the USA</td>
+            <td class="right-align">Miley Cyrus</td>
+          </tr>
+          <tr>
+            <td>Dynamite</td>
+            <td class="right-align">Talo Cruz</td>
+          </tr>
+          <tr>
+            <td>Call me Maybe</td>
+            <td class="right-align">Carly Rae Jepsen</td>
+          </tr>
+          <tr>
+            <td>All I Wanna Do</td>
+            <td class="right-align">Sheryl Crow</td>
+          </tr>
+          <tr>
+            <td>All Summer Long</td>
+            <td class="right-align">Bryan Adams</td>
+          </tr>
+          <tr>
+            <td>Summer of ‘69</td>
+            <td class="right-align">John Legend</td>
+          </tr>
+          <tr>
+            <td>Rolling in the Deep</td>
+            <td class="right-align">Adele</td>
+          </tr>
+          <tr>
+            <td>You Belong with Me</td>
+            <td class="right-align">Taylor Swift</td>
+          </tr>
+          <tr>
+            <td>Good Time</td>
+            <td class="right-align">OWL City</td>
+          </tr>
+          <tr>
+            <td>Payphone</td>
+            <td class="right-align">Maroon 5</td>
+          </tr>
+          <tr>
+            <td>Summer Nights</td>
+            <td class="right-align">Rascal Flatts</td>
+          </tr>
+          <tr>
+            <td>Airplanes</td>
+            <td class="right-align">B.O.B</td>
+          </tr>
+          <tr>
+            <td>Demons</td>
+            <td class="right-align">Imagine Dragons</td>
+          </tr>
+          <tr>
+            <td>So Alive</td>
+            <td class="right-align">Tiffany Alvord</td>
+          </tr>
+          <tr>
+            <td>Summer Forever</td>
+            <td class="right-align">Megan Nicole</td>
+          </tr>
+          <tr>
+            <td>Wrecking Ball</td>
+            <td class="right-align">Miley Cyrus</td>
+          </tr>
+          <tr>
+            <td>Happy Birthday</td>
+            <td class="right-align">The Audience</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      </div>
 </main>
    </main>
    <footer>
    <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.js"></script>
+
       <script>
       $(document).ready(function(){
       $('.parallax').parallax();
@@ -115,7 +460,7 @@ var wow = new WOW(
   {
     boxClass:     'wow',      // animated element css class (default is wow)
     animateClass: 'animated', // animation css class (default is animated)
-    offset:       300,          // distance to the element when triggering the animation (default is 0)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
     mobile:       true,       // trigger animations on mobile devices (default is true)
     live:         true,       // act on asynchronously loaded content (default is true)
     callback:     function(box) {
