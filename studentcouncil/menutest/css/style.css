@@ -199,7 +199,7 @@ Main Components
     width: 20%;
     float: left; }
     .cd-3d-nav li:first-of-type a::before {
-      background-image: url(../img/icon-1.svg); }
+      background-image: url(../img/home.svg); }
     .cd-3d-nav li:nth-of-type(2) a::before {
       background-image: url(../img/icon-2.svg); }
     .cd-3d-nav li:nth-of-type(3) a::before {
