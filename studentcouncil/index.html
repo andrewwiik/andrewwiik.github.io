@@ -398,16 +398,16 @@ $( document ).ready(function() {
   showElement: function($elem) { $elem.show(); }
 });
 $("iframe#twitter-widget-0").waitUntilExists(function(){
-    $("iframe#twitter-widget-0").contents().find('head').append('<style>img.u-photo.avatar{display:none !important;}.header.h-card.p-author{padding-left:0;}</style>');     
+    $("iframe#twitter-widget-0").contents().find('head').append('<style>img.u-photo.avatar{display:none !important;}.header.h-card.p-author{padding-left:0;} .var-chromeless .tweet {padding: 12px 2px 10px 0px !important;}</style>');     
 });
 });
 </script>
 <script>
 window.setTimeout(function(){
     $(".twitter-timeline").contents().find(".e-entry-title").css("font-family","sans-serif");
-    $(".twitter-timeline").contents().find(".tweet").css("visiblity:hidden;");
+    $(".twitter-timeline").contents().find(".tweet").css("visiblity:hidden !important;");
+    $(".twitter-timeline").contents().find(".var-chromeless .tweet").css("padding: 12px 2px 10px 0px;");
   }, 1000);
-	
 </script>
 	</body>
 </html>
