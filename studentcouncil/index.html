@@ -398,7 +398,7 @@ $( document ).ready(function() {
   showElement: function($elem) { $elem.show(); }
 });
 $("iframe#twitter-widget-0").waitUntilExists(function(){
-    $("iframe#twitter-widget-0").contents().find('head').append('<style>img.u-photo.avatar{display:none !important;}.header.h-card.p-author{padding-left:0;} .var-chromeless .tweet {padding: 12px 2px 10px 0px !important;}</style>');     
+    $("iframe#twitter-widget-0").contents().find('head').append('<style>img.u-photo.avatar{display:none !important;}.header.h-card.p-author{padding-left:0;}li.h-entry:nth-child(3){padding: 12px 2px 10px 0px !important;}</style>');     
 });
 });
 </script>
