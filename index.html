@@ -1,19 +1,342 @@
-  <html>
-    <head>
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>Creatix</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    
+    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/gsdk.css" rel="stylesheet"/>
+    
+    <link href="assets/css/demo.css" rel="stylesheet" /> 
+    <link href="assets/css/examples.css" rel="stylesheet"/>
+        
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>  
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
       <style>
- html {font-size: font-size: 15px;}
-.truncate {
-  white-space:pre-wrap;
+      .fullpage{
+        min-height:100%;
+        min-width:100%;
+        height:auto;
+        width:auto;
+        position:absolute;
+        top:-50%;
+        bottom:-50%;
+        left:-50%;
+        right:-50%;
+        margin:auto;
+      }
+      .modal {
+        text-align: center;
+      }
+      
+      .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+      }
+      
+      .modal-dialog {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+      }
+      .arrow {
+        width: 40px;
+        height: 40px;
+        border-color: white !important;
+        display: inline-block;
+        border-bottom: 1px solid;
+        border-left: 1px solid;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        /*cursor: pointer;*/
+      }
+      .arrow:hover {
+        opacity:0.5;
+      }
+      .left.arrow {
+        -ms-transform: rotate(315deg);
+        -webkit-transform: rotate(315deg);
+        transform: rotate(315deg);
+      }
+      .navbar-transparent .navbar-brand:hover, .navbar-transparent .navbar-brand:focus {
+    color: white;
+  }
+  .navbar-transparent .navbar-brand:, .navbar-transparent .navbar-brand {
+    color:#777 !important;
+    opacity: 0.8 !important;
+  }
+  .navbar-transparent .navbar-nav > li > a:hover:not(.btn) {
+    color:white !important;
 }
-   </style>
-    </head>
+  .navbar-transparent .navbar-nav > li > a:focus:not(.btn) {
+color:white !important;
+}
+.autosize {
+  width:auto;
+  height:auto;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  margin:20px 0px 15px;
+}
+.navbar-default {
+    background-color: white;
+    }
+    .navbar-transparent {
+      background-color:transparent !important;
+    }
+.parent {
+  position: relative;
+}
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card-user .author {
+    text-align: center;
+    text-transform: none;
+    margin-top: auto;
+    }
+  </style>
+</head>
+<body>
 
-    <body>
-<iframe src="https://web.skype.com/en/" style="border:0px #FFFFFF none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="60px" width="468px"></iframe>
-    </body>
-  </html>
+<!-- Navbar will come here -->
+<nav id="nav" class="navbar navbar-transparent navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button id="menu-toggle" type="button" class="navbar-toggle">
+          <span class="sr-only">
+              Toggle navigation
+            </span>
+          <span class="icon-bar bar1">
+            </span>
+          <span class="icon-bar bar2">
+            </span>
+          <span class="icon-bar bar3">
+            </span>
+        </button>
+        <a class="navbar-brand" href="#">
+           	Creatix
+          </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" data-nav-image='assets/img/blog_1.png'>
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#aboutus">
+                About Us
+              </a>
+          </li>
+          <li>
+            <a href="#">
+                Tweaks
+              </a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a data-toggle="modal" data-target="#registerModal">
+                Have an Idea?
+              </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+<!-- end navbar -->
+
+<div class="wrapper" style="width:100%; height:100vh; width:auto;">
+    <div class="navigation-example" style="height:100%">
+      <!-- Page Header -->
+      <div style="position:absolute; width:100%; right:auto; left:auto; z-index: 10; height:100%" class="club">
+      <div class="parent" style="width:100%; height:100%;">
+        <!-- Text Header and Sub-Header -->
+        <div class="child" style="color:white; text-align:center; padding-top: auto; width:100%; font-size:bigger;">
+        <img id="imgRand" src="" alt="Creatix_Logo" class="img" style="max-height:30vh;">
+            <script language="javascript">
+  				// random number between 1 and 5
+  				var numRand = Math.floor(Math.random() * (5 - 1 + 1)) + 1;
+  				document.getElementById("imgRand").src = "assets/images/IMG_"+numRand+".png";
+			</script>
+
+            <div>
+            <h1 style="color:white; text-align:center; width:100% font-size:bigger;">
+            <small style="color:white;">
+              Beautiful design crafted with simple code
+            </small>
+            </h1>
+            </div>
+            </div>
+        <!-- Go to next section button for header -->
+        <div style="right:auto; left:auto; text-align:center; padding-top:50vh; width:100%; bottom:10%">
+          <div style="position:absolute; width:100%; bottom:8vh;">
+            <a href="#aboutus"><span class="left arrow" title="Previous"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="aboutus" class="section top-section">
+           <div class="container">
+               <h2 class="section-title">We care about our work</h2>
+               <div class="row">
+                   <div class="col-md-6">
+                       <p>
+                           Creatix is a team of two designers and one developer, who want to bring the most simplistic tweak to the Jailbreak community to improve the end user's experience on their Apple Device. </p>
+                        <p>Making our debut with BatteryIcon, ShowMeMore and MoreRecent, Creatix will be the team that will bring changes to the community by releasing the most requested tweaks and designing so that they feel native to iOS.</p>
+                    
+                   </div>
+                     <div class="col-md-6">
+                       <p>Often times a jailbreak developer has a great idea, but they don't know how to execute their idea in a way that will provide useful functionality to the end user while still feeling native to iOS. </p><p> That's where Creatix comes in, because we have desginers and a developer on our team we are able to span that gap to provide tweaks that feel native to iOS but also provide functionality to the end user that wasn't there before.</p>
+                   </div>
+               </div>
+           </div>
+         </div>
+         <div class="section">
+        <div class="container">
+            <h2 class="section-title">Meet our Team</h2>
+            <div class="team-presentation">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-user card-plain">
+                            <div class="content">
+                                <div class="author">
+                                    <a href="#">
+                                    <img class="avatar border-gray" src="assets/images/AOkhtenberg-Avatar.png" alt="...">
+                                    <h4 class="title">AOkhtenberg<br>
+                                        <small>Designer</small>
+                                    </h4> 
+                                    </a>
+                                </div>  
+                                <p class="description text-center"> 
+                                    <i class="fa fa-map-marker text-muted"></i> Staten Island, New York <br>
+                                    <i class="fa fa-envelope-o text-muted"></i> AOkhtenberg@gmail.com <br>
+                                    <i class="fa fa-clock-o text-muted"></i> Since 2015
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <button href="http://twitter.com/AOkhtenberg" class="btn btn-social btn-twitter btn-simple"><i class="fa fa-twitter"></i></button>
+
+                            </div>
+                        </div> <!-- end card--> 
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-user card-plain">
+                            <div class="content">
+                                <div class="author">
+                                    <a href="#">
+                                        <img class="avatar border-gray" src="assets/images/Turna-Avatar.png" alt="...">
+                                        <h4 class="title">Turna <br>
+                                            <small>Designer</small>
+                                        </h4> 
+                                    </a>
+                                </div>  
+                                <p class="description text-center"> 
+                                    <i class="fa fa-map-marker text-muted"></i> Netherlands <br>
+                                    <i class="fa fa-envelope-o text-muted"></i> turnametehan@gmail.com <br>
+                                    <i class="fa fa-clock-o text-muted"></i> Since 2015
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <button href="http://twitter.com/byturna" class="btn btn-social btn-twitter btn-simple"><i class="fa fa-twitter"></i></button>
+                            </div>
+                        </div> <!-- end card -->
+                    </div> 
+                    <div class="col-md-4">
+                        <div class="card card-user card-plain">
+                            <!-- <div class="image"></div> -->
+                            <div class="content">
+                                <div class="author">
+                                    <a href="#">
+                                        <img class="avatar border-gray" src="assets/images/AndrewWiik-Avatar.png" alt="...">
+                                        <h4 class="title">Andrew Wiik<br>
+                                            <small>Developer</small>
+                                        </h4> 
+                                    </a>
+                                </div>  
+                                <p class="description text-center"> 
+                                    <i class="fa fa-map-marker text-muted"></i> Vernon, New Jersey <br>
+                                    <i class="fa fa-envelope-o text-muted"></i> admin@atwiiks.com <br>
+                                    <i class="fa fa-clock-o text-muted"></i> Since 2015
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <button href="http://twitter.com/atwiiks" class="btn btn-social btn-twitter btn-simple"><i class="fa fa-twitter"></i></button>
+                                <button href="#" class="btn btn-social btn-github btn-simple"><i class="fa fa-github"></i></button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+  </div>
+
+
+</body>
+
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+	<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+	
+	<!--  Plugins -->
+	<script src="assets/js/scrollReveal.min.js">
+</script>
+<script>
+       window.sr = new scrollReveal();
+</script>
+	<script src="assets/js/gsdk-checkbox.js"></script>
+	<script src="assets/js/gsdk-morphing.js"></script>
+	<script src="assets/js/gsdk-radio.js"></script>
+	<script src="assets/js/gsdk-bootstrapswitch.js"></script>
+	<script src="assets/js/bootstrap-select.js"></script>
+	<script src="assets/js/bootstrap-datepicker.js"></script>
+	<script src="assets/js/chartist.min.js"></script>
+    <script src="assets/js/jquery.tagsinput.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	
+	<script src="assets/js/get-shit-done.js"></script>
+    <script type="text/javascript">
+  $().ready(function(){
+    $(window).on('scroll', gsdk.checkScrollForTransparentNavbar);
+  }
+           );
+</script>
+<script type="text/javascript">
+  $('a[href^="#"]').on('click', function(event) {
+  
+      var target = $( $(this).attr('href') );
+  
+      if( target.length ) {
+          event.preventDefault();
+          $('html, body').animate({
+              scrollTop: target.offset().top
+          }, 1000);
+      }
+  
+  });
+</script>
+</html>
