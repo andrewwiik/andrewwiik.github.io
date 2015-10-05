@@ -106,18 +106,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.card-user .author {
-    text-align: center;
-    text-transform: none;
-    margin-top: auto;
-    }
   </style>
 </head>
-<body>
+<body class="about-us home">
 
 <!-- Navbar will come here -->
 <nav id="nav" class="navbar navbar-transparent navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+    <div class="container" style="max-width:100%; padding:0px;">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button id="menu-toggle" type="button" class="navbar-toggle">
@@ -197,7 +192,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     </div>
     <div id="aboutus" class="section top-section">
            <div class="container">
-               <h2 class="section-title">We care about our work</h2>
+               <h2 class="section-title">About Us</h2>
                <div class="row">
                    <div class="col-md-6">
                        <p>
@@ -211,7 +206,60 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
                </div>
            </div>
          </div>
-         <div class="section">
+             <div class="section">
+        <div class="container">
+            <h2 class="section-title">Our Development Process</h2>
+            <div class="clients-presentation">
+                <div class="row">
+                    <div class="col-md-3">
+                       <div class="info">
+                            <div class="icon">
+                                <i class="pe-7s-micro"></i>
+                            </div>
+                            <div class="description">
+                                <h3> 1. Listen </h3>
+                                <p class="text-muted">We listen to what the community thinks would be a great tweak. </p>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                       <div class="info">
+                            <div class="icon">
+                                <i class="pe-7s-paint"></i>
+                            </div>
+                            <div class="description">
+                                <h3> 2. Design </h3>
+                                <p class="text-muted">We take a tweak request and design a concept that feels native to iOS. </p>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                       <div class="info">
+                            <div class="icon">
+                                <i class="pe-7s-tools"></i>
+                            </div>
+                            <div class="description">
+                                <h3> 3. Develop </h3>
+                                <p class="text-muted">Our developer takes the concept and makes it into tweak.</p>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="info">
+                            <div class="icon">
+                                <i class="pe-7s-bandaid"></i>
+                            </div>
+                            <div class="description">
+                                <h3> 4. Fix </h3>
+                                <p class="text-muted">We listen to the feedback you give to make sure the tweak is bug-free. </p>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       <div class="section">
         <div class="container">
             <h2 class="section-title">Meet our Team</h2>
             <div class="team-presentation">
@@ -291,7 +339,99 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
                 </div>
             </div>
         </div>
+    </div>
+    <div class="section section-testimonials">
+        <div class="container">
+            <h2 class="section-title">What people think...</h2>
+             <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">                            
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <div class="row">
+                            <div class="col-md-6">
+                                 <div class="card card-plain">
+                                    <div class="content">
+                                        <a target="_blank" href="https://www.reddit.com/r/jailbreak/comments/3nfcue/release_morerecent_scroll_the_recently_added/cvnjxp5">
+                                            <h4 class="title">This was requested quite often. Glad someone was able to do it!</h4>
+                                        </a>
+                                         <div class="footer">
+                                            <div class="author">
+                                                <a>
+                                                   <span> Ghost3k </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end card -->
+                             </div>
+                             <div class="col-md-6">
+                                 <div class="card card-plain">
+                                    <div class="content">
+                                            <h4 class="title">I usually don't like extra icons from a tweak but this is more accurate, how the color slowly transitions from green to orange and red. Very simple.. Love it. Keep it up!
+                                            </h4>
+                                        
+                                         <div class="footer">
+                                            <div class="author">
+                                                   <span> Fabriziobeltr </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end card -->
+                             </div>
+                        </div> <!-- end row -->
+                    </div>
+                    <div class="item">
+                      <div class="row">
+                          <div class="col-md-6">
+                                <div class="card card-plain">
+                                    <div class="content">
+                                        <a target="_blank" href="">
+                                            <h4 class="title">Loved the reusable elements in the 'Get Shit Done Kit'? The PRO version will blow your mind. </h4>
+                                        </a>
+                                         <div class="footer">
+                                            <div class="author">
+                                                <a target="_blank" href="http://www.awwwards.com/">
+                                                   <img src="../assets/img/faces/face-6.jpg" alt="..." class="avatar">
+                                                   <span> Conacel Elena </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end card -->
+                             </div>
+                             <div class="col-md-6">
+                                 <div class="card card-plain">
+                                    <div class="content">
+                                        <a target="_blank" href="http://www.creative-tim.com/product/get-shit-done-pro">
+                                            <h4 class="title">I've bought it, and I have to say that it's simply awesome. Creative Tim creates awesome looking templates! :)</h4>
+                                        </a>
+                                         <div class="footer">
+                                            <div class="author">
+                                                <a>
+                                                   <img src="../assets/img/faces/face-4.jpg" alt="..." class="avatar">
+                                                   <span> Jay Z </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end card -->
+                             </div>
+
+                      </div>
+                    </div>
+                  </div>
+                
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#testimonials-carousel" data-slide="prev">
+                    <span class="fa fa-angle-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#testimonials-carousel" data-slide="next">
+                    <span class="fa fa-angle-right"></span>
+                  </a>
+            </div>
+        </div>
     </div> 
+ <!-- end section meet our clients -->
   </div>
 
 
